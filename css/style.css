@@ -48,6 +48,10 @@ body._lock {
           box-shadow: 0 0 11px rosybrown;
 }
 
+.main {
+  margin: 80px;
+}
+
 @media (min-width: 767px) {
   .menu__list {
     display: -webkit-box;
