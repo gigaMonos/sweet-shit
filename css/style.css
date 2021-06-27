@@ -1,1 +1,204 @@
+body._lock {
+  overflow: hidden;
+}
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+  height: 160px;
+}
+
+.header .header__contanier {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header__contanier .header__logo {
+  position: relative;
+  z-index: 5;
+}
+
+.header .header__contanier .menu__list .menu__icon {
+  display: none;
+}
+
+.header .header__contanier .menu__list .menu__link {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: rosybrown;
+}
+
+.header .header__contanier .menu__list .menu__link:hover {
+  border: 1px solid rosybrown;
+  -webkit-box-shadow: 0 0 11px rosybrown;
+          box-shadow: 0 0 11px rosybrown;
+}
+
+@media (min-width: 767px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__list .menu__link {
+    padding: 30px 80px 30px 80px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .header__contanier .header__logo {
+    min-width: 50px;
+  }
+  .header .header__contanier .header__menu .menu__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 180px 30px 30px 30px;
+    background-color: white;
+    -webkit-transition: left 0.3s ease 0s;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+  }
+  .header .header__contanier .header__menu .menu__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 150px;
+    background-color: white;
+    z-index: 5;
+  }
+  .header .header__contanier .header__menu .menu__body .menu__list > li {
+    margin: 0px 0px 20px 10px;
+    padding: 40px;
+  }
+  .header .header__contanier .header__menu .menu__body .menu__list {
+    font-size: 22px;
+    padding: 7px;
+  }
+  .header .header__contanier .header__menu .menu__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 30px;
+  }
+  .header .header__contanier .header__menu .menu__icon span, .header .header__contanier .header__menu .menu__icon::before, .header .header__contanier .header__menu .menu__icon::after {
+    position: absolute;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rosybrown;
+  }
+  .header .header__contanier .header__menu .menu__icon::before, .header .header__contanier .header__menu .menu__icon::after {
+    content: "";
+  }
+  .header .header__contanier .header__menu .menu__icon::before {
+    top: 0;
+  }
+  .header .header__contanier .header__menu .menu__icon::after {
+    bottom: 0;
+  }
+  .header .header__contanier .header__menu .menu__icon span {
+    top: 50%;
+    -webkit-transform: scale(1) translate(0px, -50%);
+            transform: scale(1) translate(0px, -50%);
+  }
+  .header .header__contanier .header__menu ._active {
+    left: 0;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */
