@@ -31,6 +31,10 @@ body._lock {
         text-transform: uppercase;
         color: rosybrown;
 
+        @media (max-width: 1040px) {
+          padding: 20px 40px;
+        }
+
         &:hover {
           border: 1px solid rosybrown;
           box-shadow: 0 0 11px rosybrown;
@@ -39,9 +43,6 @@ body._lock {
     }
   }
 }
-.main{
-  margin: 80px;
-}
 
 @media (min-width: 767px) {
   .menu__list {
@@ -49,7 +50,7 @@ body._lock {
     align-items: center;
 
     .menu__link {
-      padding: 30px 80px 30px 80px;
+      padding: 30px 80px;
       font-size: 20px;
     }
   }
@@ -72,10 +73,6 @@ body._lock {
           background-color: white;
           transition: left 0.3s ease 0s;
           overflow: auto;
-
-          // .menu__body._active  {
-          //   left: 0;
-          // }
 
           &::before {
             content: "";

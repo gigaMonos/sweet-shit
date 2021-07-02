@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="_icons.scss">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-
     <header class="header">
       <div class="header__contanier">
-        <img class="header__logo" src="logoshit.png" alt=""/>
+        <img class="header__logo" src="logoshit.png" alt="" />
         <div class="header__menu menu">
           <div class="menu__icon">
             <span></span>
@@ -28,35 +28,81 @@
       </div>
     </header>
     <div class="main">
-      <aside class="sider__menu">
-        <ul class="siderbar__list">
-          <li>
-            <a href="#" class="sidebar__item">postcards</a>
-          </li>
-          <li>
-            <a href="" class="sidebar__item">limited collection</a>
-          </li>
-          <li>
-            <a href="" class="sidebar__item">portraits</a>
-          </li>
-          <li>
-            <a href="" class="sidebar__item">wall painting</a>
-          </li>
-        </ul>
+      <aside class="sider">
+        <nav class="sidebar__menu">
+          <ul class="siderbar__list">
+            <li>
+              <a href="#" class="sidebar__item">postcards</a>
+            </li>
+            <li>
+              <a href="#" class="sidebar__item">limited collection</a>
+            </li>
+            <li>
+              <a href="#" class="sidebar__item">portraits</a>
+            </li>
+            <li>
+              <a href="#" class="sidebar__item">wall painting</a>
+            </li>
+            <li>
+              <a href="#" class="sidebar__item">shopping cart</a>
+            </li>
+          </ul>
+        </nav>
       </aside>
       <section class="content">
-        <h1>new! stikers</h1>
-        <div class="stikers"> <img src="stiker.jpg" alt="">
+        <div class="heading_text">
+          <h1> new stuff on sweet shit shop</h1>
+        </div>
+        <div class="stikers">
+          <div class="label">
+            <div class="lable__item">new</div>
+          </div>
+          <img src="stiker.jpg" alt="" />
         </div>
         <section class="prducts__items">
-          <div class="products__item">
+          <div id="1" class="products__item">
             <a href="#">
-              <img src="icecream.jpg" alt="">
+              <img class="product__image" src="img/rusalka.jpg" alt="" />
             </a>
             <a href="#" class="product_name">posctcard icecream</a>
             <a href="#" class="products__button">buy</a>
           </div>
-      </section>
+          <div id="2" class="products__item">
+            <a href="#">
+              <img class="product__image" src="img/mushroom.jpg" alt="" />
+            </a>
+            <a href="#" class="product_name">posctcard icecream</a>
+            <a href="#" class="products__button">buy</a>
+          </div>
+          <div id="3" class="products__item">
+            <a href="#">
+              <img class="product__image" src="img/icecreamsec.jpg" alt="" />
+            </a>
+            <a href="#" class="product_name">posctcard icecream</a>
+            <a href="#" class="products__button">buy</a>
+          </div>
+          <div id="4" class="products__item">
+            <a href="#">
+              <img class="product__image" src="img/icecream.jpg" alt="" />
+            </a>
+            <a href="#" class="product_name">posctcard icecream</a>
+            <a href="#" class="products__button">buy</a>
+          </div>
+          <div id="5" class="products__item">
+            <a href="#">
+              <img class="product__image" src="img/cat.jpg" alt="" />
+            </a>
+            <a href="#" class="product_name">posctcard icecream</a>
+            <a href="#" class="products__button">buy</a>
+          </div>
+          <div id="6" class="products__item">
+            <a href="#">
+              <img class="product__image" src="img/bunny.jpg" alt="" />
+            </a>
+            <a href="#" class="product_name">posctcard icecream</a>
+            <a href="#" class="products__button">buy</a>
+          </div>
+        </section>
       </section>
     </div>
     <script src="script.js"></script>

@@ -42,14 +42,16 @@ body._lock {
   color: rosybrown;
 }
 
+@media (max-width: 1040px) {
+  .header .header__contanier .menu__list .menu__link {
+    padding: 20px 40px;
+  }
+}
+
 .header .header__contanier .menu__list .menu__link:hover {
   border: 1px solid rosybrown;
   -webkit-box-shadow: 0 0 11px rosybrown;
           box-shadow: 0 0 11px rosybrown;
-}
-
-.main {
-  margin: 80px;
 }
 
 @media (min-width: 767px) {
@@ -62,7 +64,7 @@ body._lock {
             align-items: center;
   }
   .menu__list .menu__link {
-    padding: 30px 80px 30px 80px;
+    padding: 30px 80px;
     font-size: 20px;
   }
 }
@@ -204,5 +206,154 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+.main {
+  padding: 160px 30px 30px 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr minmax(auto, 200px) minmax(auto, 1050px) 1fr;
+      grid-template: 1fr/1fr minmax(auto, 200px) minmax(auto, 1050px) 1fr;
+}
+
+.main .sider {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  padding: 0px 0px 0px 30px;
+}
+
+.main .sider .sidebar__menu .siderbar__list {
+  margin: 20px 0px 50px 0px;
+}
+
+.main .sider .sidebar__menu .siderbar__list .sidebar__item {
+  color: rosybrown;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  display: block;
+}
+
+.main .sider .sidebar__menu .siderbar__list .sidebar__item:hover {
+  border: 1px solid rosybrown;
+  -webkit-box-shadow: 0 0 11px rosybrown;
+          box-shadow: 0 0 11px rosybrown;
+}
+
+.main .sider .sidebar__menu .siderbar__list li {
+  margin: 0px 0px 30px 0px;
+}
+
+.main .content {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  padding: 100px;
+}
+
+.main .content .heading_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .content h1 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: rosybrown;
+}
+
+.main .content .label {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main .content .label .lable__item {
+  padding: 20px;
+  margin: 10px 10px 0 0;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  background-color: yellow;
+  text-transform: uppercase;
+}
+
+.main .content .stikers {
+  position: relative;
+  padding: 0px 0px 85% 0px;
+  margin: 0px 0px 50px 0px;
+}
+
+.main .content .stikers img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .prducts__items {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 30;
+          column-gap: 30;
+  row-gap: 50px;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.main .prducts__items .product__image {
+  position: relative;
+  margin: 0px 0px 20px 0px;
+}
+
+.main .prducts__items .product__image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .prducts__items .products__item {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 30px;
+  -ms-grid-rows: auto 1fr minmax(40px, auto);
+  -ms-grid-columns: 1fr;
+      grid-template: auto 1fr minmax(40px, auto)/1fr;
+}
+
+.main .prducts__items .products__item .product_name {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rosybrown;
 }
 /*# sourceMappingURL=style.css.map */
